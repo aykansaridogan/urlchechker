@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tarama Sonuçları</title>
+</head>
+<body>
+    <h1>Tarama Sonuçları</h1>
+    <table border="1">
+        <tr>
+            <th>URL</th>
+            <th>Sonuç</th>
+        </tr>
+        {% for url, result in scan_results.items() %}
+        <tr>
+            <td>{{ url }}</td>
+            <td>{{ result }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
