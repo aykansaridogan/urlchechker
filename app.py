@@ -6,7 +6,7 @@ import base64
 app = Flask(__name__)
 
 # VirusTotal API Key (gizli tutun ve kodda değiştirin)
-API_KEY = '2519ee5340f3778c6c50d9b6cdf52c6e9eb7cbd3e5971a5f63d367f1f3cbe7db'
+API_KEY = 'Your API Key'
 
 def get_urls_from_page(url):
     response = requests.get(url)
